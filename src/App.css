@@ -10,7 +10,17 @@
   margin-bottom: 10px !important;
 }
 
+.-button {
+  float: center;
+  background-color: aqua;
+}
+
 .ft {
   border-radius: 5px;
+  background-color: aqua;
   border: solid brown;
+}
+
+#export {
+  visibility: hidden;
 }

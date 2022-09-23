@@ -1,22 +1,17 @@
 import './App.css';
 import ExportCSV from './components/ExportCSV';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Main from './components/Main';
 import styled from 'styled-components';
 
 
 
 function App() {
 
-  let url 
-
-
   return (
     <BrowserRouter>
     <AppContainer>
       <Routes>
-        <Route exact path="/" element={<Main/>} />
-        <Route exact path="/jsontoexcel" element={<ExportCSV/>} />
+        <Route exact path="/" element={<ExportCSV/>} />
       </Routes>
     </AppContainer>
   </BrowserRouter>
@@ -28,7 +23,7 @@ display: flex;
 flex-direction: column;
 min-height: 100vh;
 align-items: center;
-justify-content: center;
+
 font-size: calc(8px + 2vmin);
 color: white;
 background-color: #454552;
